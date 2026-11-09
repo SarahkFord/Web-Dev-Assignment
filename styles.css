@@ -1,0 +1,77 @@
+header {
+    text-align: center;
+    margin-bottom:10px;
+}
+.welcome {
+    text-align: center; 
+    background-color: white;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 2000px;
+}
+body {   
+        font-family: Roboto, 'Times New Roman', sans-serif;
+        font-size: 1rem;
+        line-height: 1.2;
+        background-color: rgb(171, 200, 228);
+        margin: 10px;
+        padding: 10px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+h1 {
+    background-color: white;
+    color: #263B53;
+    font-size: 32px;
+     padding: 10px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+button {
+    background-color: rgb(185, 185, 194);
+
+}
+button:hover {background: rgb(183, 183, 205)}
+
+input:focus, select:focus {
+    outline: 2px solid #181a1c;
+    border-color: #181a1c;
+}
+select {
+    background-color: white;
+    color: #263B53;
+    padding: 1px;
+    border: 1px dotted #1a77da;
+    font-size: 1rem;
+    cursor: pointer;
+}
+select:focus {
+    outline: 2px solid #adc6ec;
+    border-color: #6e2e39;
+}
+section {
+    background-color: rgb(227, 231, 231);
+    padding: 10px;
+    border-radius: 10px;
+}
+#taskError {
+    color: red;
+    display: inline;
+    margin-left: 10px;
+}
+.dark-theme {
+    background-color: #263238;
+    color: white;
+}
+.dark-theme section,
+.dark-theme .welcome,
+.dark-theme h1 {
+    background-color: #37474f;
+    color: white;
+}

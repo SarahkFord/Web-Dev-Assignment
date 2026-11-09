@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Personal Dashboard</h1>
+
+        <label>Click to change mode:</label>
+        <button id="darkModeButton" type="button">Dark Mode</button>
+    </header>
+
+    <main>
+
+        <section class="welcome">
+            <h2 id="greeting">Welcome Back to your Dashboard</h2>
+            <input type="text" id="userName" placeholder="Enter your name...">
+            <button id="nameButton" type="button">Update Dashboard</button>
+            <p id="status">Status: You have 0 task(s) on your list</p>
+        </section>
+
+        <div class="container">
+
+            <section>
+                <h2>Add New Tasks</h2>
+
+                <form id="taskForm">
+                    <p>Task Name:</p>
+                    <input type="text" id="task" placeholder="Enter task...">
+
+                    <p>Priority Level:</p>
+                    <select id="priority">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                    <button type="submit">Add Task</button>
+                    <p id="taskError"></p>
+                </form>
+            </section>
+
+            <section>
+                <h2>My Tasks</h2>
+                <ul id="taskList"></ul>
+            </section>
+
+        </div>
+    </main>
+</body>
+</html>
